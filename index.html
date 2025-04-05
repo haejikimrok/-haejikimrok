@@ -21,19 +21,19 @@
       height: 400px; /* 배경 이미지 높이 */
     }
 
-    /* 텍스트 부분 */
-    header div {
-      text-align: center;
+    /* 노란 배경과 텍스트 */
+    .yellow-banner {
+      background-color: #fdd835; /* 노란색 배경 */
       padding: 2rem;
-      background-color: rgba(253, 216, 53, 0.8); /* 약간의 투명도 추가하여 노란색 배경 */
+      text-align: center;
     }
 
-    header h1 {
+    .yellow-banner h1 {
       font-size: 2.5rem;
       margin: 0;
     }
 
-    header p {
+    .yellow-banner p {
       font-size: 1.2rem;
       font-style: italic;
       margin: 0;
@@ -56,13 +56,15 @@
   </style>
 </head>
 <body>
-  <!-- 배경 이미지 위에 텍스트 추가 -->
+  <!-- 배경 이미지 -->
   <header>
-    <div>
-      <h1>김해지 / 교육자</h1>
-      <p>말보다 삶으로, 아이들에게도 배우며 성장하는 강사 김해지입니다.</p>
-    </div>
   </header>
+
+  <!-- 노란 배경 텍스트 영역 -->
+  <div class="yellow-banner">
+    <h1>김해지 / 교육자</h1>
+    <p>말보다 삶으로, 아이들에게도 배우며 성장하는 강사 김해지입니다.</p>
+  </div>
 
   <section>
     <h2>소개</h2>
@@ -116,3 +118,4 @@
   </footer>
 </body>
 </html>
+
