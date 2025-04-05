@@ -16,8 +16,9 @@
     /* 상단 사진 */
     header img {
       width: 100%; /* 사진이 화면 전체 너비를 차지하도록 설정 */
-      height: 300px; /* 사진 높이를 300px로 줄이기 */
-      object-fit: cover; /* 비율 유지하며 이미지 잘리도록 설정 */
+      height: auto; /* 비율을 자동으로 맞추고 */
+      object-fit: cover; /* 이미지 비율을 유지하면서 화면을 덮게 설정 */
+      max-height: 400px; /* 최대 높이 설정 */
     }
 
     /* 노란 배경 */
@@ -32,50 +33,7 @@
       margin: 0;
     }
 
-    .yellow-banner p {
-      font-size: 1rem; /* 글자 크기 줄이기 */
-      font-style: italic;
-      margin: 0;
-    }
-
-    .subheading {
-      font-size: 1.5rem; /* "Nadine Nadine Aladdin ~!" 텍스트 크기 설정 */
-      font-weight: bold;
-      margin-top: 0.5rem;
-    }
-
-    section {
-      max-width: 800px;
-      margin: 3rem auto;
-      padding: 0 1rem;
-      line-height: 1.5;
-    }
-
-    footer {
-      text-align: center;
-      font-size: 0.9rem;
-      color: #777;
-      padding: 2rem 0;
-      background-color: #f2f2f2;
-    }
-  </style>
-</head>
-<body>
-  <!-- 상단에 사진 -->
-  <header>
-    <img src="https://github.com/haejikimrok/haejikimrok.github.io/raw/main/%EA%B9%80%ED%95%B4%EC%A7%80%20%EA%B0%95%EC%82%AC.jpg" alt="김해지">
-  </header>
-
-  <!-- 노란 배경 텍스트 -->
-  <div class="yellow-banner">
-    <h1>김해지 / 교육자</h1>
-    <p>말보다 삶으로, 아이들에게도 배우며 성장하는 강사 김해지입니다.</p>
-    <div class="subheading">Nadine Nadine Aladdin ~!</div> <!-- 추가된 부분 -->
-  </div>
-
-  <section>
-    <h2>소개</h2>
-    <p>이 공간은 저의 교육 철학, 활동 이력, 그리고 학생들과 함께한 이야기를 담고 있습니다.</p>
+    .yellow-ban향한 이야기를 담고 있습니다.</p>
 
     <h2>학력 및 배경</h2>
     <ul>
