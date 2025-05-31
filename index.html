@@ -98,7 +98,7 @@
       align-self: flex-start;
     }
 
-    .section2, .section3, .section4 {
+    .section2, .section3, .section4, .section5 {
       justify-content: center;
       align-items: center;
       text-align: center;
@@ -113,6 +113,7 @@
   <div class="navbar">
     <a data-menuanchor="home" href="#home">소개</a>
     <a data-menuanchor="journey" href="#journey">여정</a>
+    <a data-menuanchor="classroom" href="#classroom">강의실 이야기</a>
     <a data-menuanchor="contact" href="#contact">Contact Us</a>
   </div>
 
@@ -154,6 +155,11 @@
       </ul>
     </div>
 
+    <div class="section section4" data-anchor="classroom">
+      <h2>강의실 이야기</h2>
+      <p>여기에 강의실 에피소드, 수업 후기, 학생들과의 따뜻한 순간들을 담을 수 있습니다.</p>
+    </div>
+
     <div class="section section3" data-anchor="contact">
       <h2>Contact Us</h2>
       <p>이 페이지는 교육자와 의료인의 삶을 함께 살아가는 저희 부부로부터 시작되었습니다.</p>
@@ -170,7 +176,7 @@
       navigation: true,
       navigationPosition: 'right',
       scrollingSpeed: 1000,
-      anchors: ['home', 'journey', 'contact'],
+      anchors: ['home', 'journey', 'classroom', 'contact'],
       menu: '.navbar'
     });
   </script>
