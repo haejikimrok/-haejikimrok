@@ -75,14 +75,17 @@
       color: #333;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
-      padding: 4rem 2rem;
       text-align: center;
       min-height: 100vh;
     }
 
-    .section1 h1 {
+    .home-title {
+      background-color: #f5f5f5;
+    }
+
+    .home-title h1 {
       font-size: 3.5rem;
       font-weight: 600;
       color: #222;
@@ -113,21 +116,25 @@
 
   <div id="fullpage">
     <div class="section section1" data-anchor="home">
+      <!-- 배경 이미지 전용 섹션 -->
+    </div>
+
+    <div class="section home-title" data-anchor="home-title">
       <h1>알라딘 쌤 | 김해지 Nadine</h1>
       <p class="subheading">"울림 있는 교육자로 남겠습니다."</p>
     </div>
 
     <div class="section section2" data-anchor="intro">
       <h2>소개</h2>
-      <p>이 공간은 저의 교육 철학, 활동 이력, 그리고 학생들을 향한 이야기를 담고 있습니다.</p>
-      <p>공부가 잘 되었던 시절도 있었고, 삶의 무게로 무너졌던 시간도 있었습니다.</p>
-      <p>그럼에도 다시 일어설 수 있음을 배우며 지금의 제가 되었습니다.</p>
-      <p>이를 통해 아이들의 눈을 진심으로 바라보고 다가갈 수 있는 선생님이 되었다고 믿습니다.</p>
-      <p>아이를 가르치는 일은, 단순히 지식을 전달하는 것이 아니라 아이의 가능성과 감정을 함께 살피는 일이기 때문입니다.</p>
+      <p>이 공간은 저의 교육 철학, 활동 이력,<br>그리고 학생들을 향한 이야기를 담고 있습니다.</p>
+      <p>공부가 잘 되었던 시절도 있었고,<br>삶의 무게로 무너졌던 시간도 있었습니다.</p>
+      <p>그럼에도 다시 일어설 수 있음을 배우며<br>지금의 제가 되었습니다.</p>
+      <p>이를 통해 아이들의 눈을 진심으로 바라보고<br>다가갈 수 있는 선생님이 되었다고 믿습니다.</p>
+      <p>아이를 가르치는 일은, 단순히 지식을 전달하는 것이 아니라<br>아이의 가능성과 감정을 함께 살피는 일이기 때문입니다.</p>
       <br><br>
       <p>저는 어떤 학생이든, 저마다의 속도와 방식이 있다고 생각합니다.</p>
-      <p>그래서 정답을 강요하기보다는, 함께 질문하고, 발견하며, 스스로 성장할 수 있도록 이끌어가고자 합니다.</p>
-      <p>선생님은 아이보다 앞서 있기보다, 아이 옆에 있는 사람이어야 한다는 마음으로, 오늘도 ‘함께 배우는 사람’이 되기를 다짐합니다.</p>
+      <p>그래서 정답을 강요하기보다는, 함께 질문하고, 발견하며,<br>스스로 성장할 수 있도록 이끌어가고자 합니다.</p>
+      <p>선생님은 아이보다 앞서 있기보다,<br>아이 옆에 있는 사람이어야 한다는 마음으로,<br>오늘도 ‘함께 배우는 사람’이 되기를 다짐합니다.</p>
     </div>
 
     <div class="section section3" data-anchor="journey">
@@ -176,7 +183,7 @@
       navigation: true,
       navigationPosition: 'right',
       scrollingSpeed: 1000,
-      anchors: ['home', 'intro', 'journey', 'classroom', 'contact'],
+      anchors: ['home', 'home-title', 'intro', 'journey', 'classroom', 'contact'],
       menu: '.navbar'
     });
   </script>
