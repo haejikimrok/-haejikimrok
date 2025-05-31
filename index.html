@@ -33,14 +33,6 @@
       color: white;
     }
 
-    /* 상단 사진 */
-    header img {
-      width: 100%;
-      height: auto;
-      object-fit: cover;
-      max-height: 400px;
-    }
-
     /* 노란 배경 */
     .yellow-banner {
       background-color: #fdd835;
@@ -87,20 +79,21 @@
       padding: 2rem 0;
       background-color: #f2f2f2;
     }
+
+    /* 약력 섹션 간격 조정 */
+    .resume-section ul {
+      margin: 1rem 0 0.5rem 1rem;
+      padding-left: 1rem;
+    }
   </style>
 </head>
 <body>
 
-  <!-- 상단 이미지 -->
-  <header>
-    <img src="https://github.com/haejikimrok/haejikimrok.github.io/raw/main/%EA%B9%80%ED%95%B4%EC%A7%80%20%EA%B0%95%EC%82%AC.jpg" alt="김해지" />
-  </header>
-
   <!-- 메뉴 -->
   <div class="navbar">
-    <a onclick="showTab('home')" class="active">홈</a>
-    <a onclick="showTab('about')">소개</a>
-    <a onclick="showTab('contact')">연락처</a>
+    <a onclick="showTab('home')" class="active">소개</a>
+    <a onclick="showTab('about')">여정</a>
+    <a onclick="showTab('contact')">Contact Us</a>
   </div>
 
   <!-- 배너 -->
@@ -110,7 +103,7 @@
     <div class="subheading">Nadine Nadine Aladdin ~!</div>
   </div>
 
-  <!-- 탭 콘텐츠 -->
+  <!-- 소개 -->
   <section id="home" class="tab-content active">
     <h2>소개</h2>
     <p>이 공간은 저의 교육 철학, 활동 이력, 그리고 학생들을 향한 이야기를 담고 있습니다.</p>
@@ -119,14 +112,13 @@
     <p>저는 그 모든 경험이 있었기에, 아이들의 눈을 진심으로 바라보고 다가갈 수 있는 선생님이 되었다고 믿습니다.</p>
   </section>
 
-  <section id="about" class="tab-content">
-    <h2>약력</h2>
+  <!-- 여정 -->
+  <section id="about" class="tab-content resume-section">
+    <h2>여정</h2>
     <ul>
       <li>동덕여자대학교 경영학과 졸업</li>
       <li>대일외국어고등학교 영어과 졸업</li>
     </ul>
-
-    <br>
 
     <ul>
       <li>초등영어지도사 1급</li>
@@ -135,14 +127,10 @@
       <li>국기원 태권도 공인 4단</li>
     </ul>
 
-    <br>
-
     <ul>
       <li>2016 한양대학교 모의논술 인문논술 우수답안 1위</li>
       <li>서울대학교 언어교육원 TEPS 전문교육인 양성과정 자격 취득</li>
     </ul>
-
-    <br>
 
     <ul>
       <li>(現) 정상어학원 운정 2분원</li>
@@ -167,13 +155,14 @@
     </ul>
   </section>
 
+  <!-- Contact Us -->
   <section id="contact" class="tab-content">
     <h2>우리의 이야기</h2>
     <p>이 페이지는 교육자와 의료인의 삶을 함께 살아가는 저희 부부로부터 시작되었습니다.</p> 
     <p>아이에게도 좋은 어른이 되고 싶은 마음, 그리고 우리 공동체가 함께 성장하기를 바라는 바람에서 출발했습니다.</p>
     <p>저희가 살아가는 모습이 다른 누군가에게 진심 어린 응원이 될 수 있기를 바랍니다.</p>
 
-    <h2>연락하기</h2>
+    <h2>Contact Us</h2>
     <p>함께 나누고 싶은 이야기가 있다면 이메일로 연락해주세요.<br>언젠가 이 공간이 더 많은 이야기로 채워질 수 있기를 바랍니다.</p>
     <p><strong>Email:</strong> kimhaejirok@naver.com</p>
   </section>
